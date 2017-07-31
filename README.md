@@ -51,7 +51,7 @@
 
 <a href="https://github.com/mingburnu/DjangoCrud/blob/master/DjangoCrud/urls.py">edit DjangoCrud/urls.py</a>
 
-<a href="https://github.com/mingburnu/DjangoCrud/blob/master/DjangoCrud/templates">edit DjangoCrud/templates/trips/xxxx.html</a>
+<a href="https://github.com/mingburnu/DjangoCrud/tree/master/templates">edit DjangoCrud/templates/trips/xxxx.html</a>
 
 <a href="http://127.0.0.1:8000">127.0.0.1:8000</a><br>
 
