@@ -54,7 +54,6 @@
 <a href="https://github.com/mingburnu/DjangoCrud/blob/master/DjangoCrud/templates">edit DjangoCrud/templates/trips/xxxx.html</a>
 
 <a href="http://127.0.0.1:8000">127.0.0.1:8000</a><br>
-<a href="http://127.0.0.1:8000/api">127.0.0.1:8000/api</a>
 
 ### REFERECE
 <a href="https://github.com/rayed/django_crud">Django CRUD Example Apps</a><br>
