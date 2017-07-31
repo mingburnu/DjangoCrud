@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Django CRUD Example</title>
+    <link href="//fonts.googleapis.com/css?family=Lemon" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//djangogirlstaipei.github.io/assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<ul>
+    <li><a href="{% url 'home' %}">HOME</a></li>
+    <li><a href="{% url 'crud:city_cbv_list' %}">CBV</a></li>
+    <li><a href="{% url 'crud:city_cbv_list' %}">FBV</a></li>
+</ul>
+{% block content %}{% endblock %}
+</body>
+</html>

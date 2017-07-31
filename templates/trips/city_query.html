@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block content %}
+    <h1>Query</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" self="Submit"/>
+    </form>
+    <h1>city search</h1>
+    <ul>
+        {% for city in object_list %}
+            <li>{{ city.location }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
