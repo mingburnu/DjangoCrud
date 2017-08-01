@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'^cbv/modify/(?P<pk>\d+)$', views.CityModify.as_view(), name='city_cbv_modify'),
     url(r'^cbv/query/$', views.CityQuery.as_view(), name='city_cbv_query'),
     url(r'^cbv/first/$', views.CityFirst.as_view(), name='city_cbv_first'),
+    url(r'^cbv/home/$', views.CityHome.as_view(), name='city_cbv_home'),
     url(r'^fbv/$', views.city_list, name='city_fbv_list'),
     url(r'^fbv/add/$', views.city_create, name='city_fbv_add'),
     url(r'^fbv/edit/(?P<pk>\d+)$', views.city_update, name='city_fbv_edit'),
@@ -19,4 +20,5 @@ urlpatterns = [
     url(r'^fbv/modify/(?P<pk>\d+)$', views.city_modify, name='city_fbv_modify'),
     url(r'^fbv/query/$', views.city_query, name='city_fbv_query'),
     url(r'^fbv/first/$', views.city_first, name='city_fbv_first'),
+    url(r'^fbv/home/$', views.city_home, name='city_fbv_home'),
 ]

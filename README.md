@@ -60,3 +60,5 @@
 <a href="http://www.effectivedjango.com/forms.html">Effective Django Forms</a><br>
 <a href="http://www.atjiang.com/2scoopsdjango1.8-10-best-practices-for-CBV/">Django 的 CBV 最佳实践</a><br>
 <a href="https://docs.djangoproject.com/en/dev/ref/forms/fields/">Form fields</a><br>
+<a href="https://docs.djangoproject.com/en/1.11/topics/class-based-views/intro/">Introduction to class-based views</a><br>
+<a href="http://www.cnblogs.com/jishuweiwang/p/6362859.html">Python菜鸟之路</a><br>

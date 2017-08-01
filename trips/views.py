@@ -5,7 +5,7 @@ from django.forms import ModelForm
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy
-from django.views.generic import ListView, CreateView, UpdateView, DeleteView, DetailView, FormView
+from django.views.generic import ListView, CreateView, UpdateView, DeleteView, DetailView, FormView, TemplateView
 
 from trips.models import City
 
@@ -65,6 +65,11 @@ class CityModify(UpdateView):
     form_class = Validate
     success_url = reverse_lazy('crud:city_cbv_list')
 
+    def dispatch(self, *args, **kwargs):
+        print(args[0])
+        print('this is cbv modify')
+        return super(CityModify, self).dispatch(*args, **kwargs)
+
     def get(self, request, *args, **kwargs):
         city = get_object_or_404(self.model, pk=self.kwargs['pk'])
         form = self.form_class(instance=city)
@@ -109,6 +114,10 @@ class CityFirst(ListView):
     model = City
     template_name = 'trips/city_first.html'
     queryset = model.objects.first()
+
+
+class CityHome(TemplateView):
+    template_name = 'index.html'
 
 
 def city_list(request):
@@ -160,7 +169,7 @@ def city_view(request, pk):
     return render(request, 'trips/city_detail.html', {'object': city})
 
 
-def city_modify(request, pk):
+def city_modify(request, **kwargs):
     class Validate(ModelForm):
         pk = None
         location = forms.CharField()
@@ -185,9 +194,12 @@ def city_modify(request, pk):
 
             return data
 
-    city = get_object_or_404(City, pk=pk)
+    city = get_object_or_404(City, pk=kwargs['pk'])
     form = Validate(request.POST or None, instance=city)
-    form.pk = pk
+    form.pk = kwargs['pk']
+
+    print(request)
+    print('this is fbv modify')
 
     if form.is_valid():
         form.save()
@@ -215,3 +227,7 @@ def city_query(request):
 def city_first(request):
     object_list = City.objects.first()
     return render(request, 'trips/city_first.html', {'object_list': object_list})
+
+
+def city_home(request):
+    return render(request, 'index.html')
