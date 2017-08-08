@@ -4,7 +4,7 @@
         <h1>cities CBV</h1>
         <div>
             <ul>
-                <li><a href="{% url 'crud:city_cbv_add' %}">ADD</a></li>
+                <li><a href="{% url 'crud:city_cbv_create' %}">ADD</a></li>
                 <li><a href="{% url 'crud:city_cbv_query' %}">QUERY</a></li>
                 <li><a href="{% url 'crud:city_cbv_first' %}">FIRST</a></li>
             </ul>
@@ -14,7 +14,7 @@
                 <tr>
                     <td>{{ city.location }}</td>
                     <td>
-                        <a href="{% url 'crud:city_cbv_edit' pk=city.pk %}">EDIT</a>
+                        <a href="{% url 'crud:city_cbv_update' pk=city.pk %}">EDIT</a>
                         <a href="{% url 'crud:city_cbv_view' pk=city.pk %}">VIEW</a>
                         <a href="{% url 'crud:city_cbv_delete' pk=city.pk %}">DELETE</a>
                         <a href="{% url 'crud:city_cbv_modify' pk=city.pk %}">MODIFY</a>
@@ -26,7 +26,7 @@
         <h1>cities FBV</h1>
         <div>
             <ul>
-                <li><a href="{% url 'crud:city_fbv_add' %}">ADD</a></li>
+                <li><a href="{% url 'crud:city_fbv_create' %}">ADD</a></li>
                 <li><a href="{% url 'crud:city_fbv_query' %}">QUERY</a></li>
                 <li><a href="{% url 'crud:city_fbv_first' %}">FIRST</a></li>
             </ul>
@@ -36,7 +36,7 @@
                 <tr>
                     <td>{{ city.location }}</td>
                     <td>
-                        <a href="{% url 'crud:city_fbv_edit' pk=city.pk %}">EDIT</a>
+                        <a href="{% url 'crud:city_fbv_update' pk=city.pk %}">EDIT</a>
                         <a href="{% url 'crud:city_fbv_view' pk=city.pk %}">VIEW</a>
                         <a href="{% url 'crud:city_fbv_delete' pk=city.pk %}">DELETE</a>
                         <a href="{% url 'crud:city_fbv_modify' pk=city.pk %}">MODIFY</a>
