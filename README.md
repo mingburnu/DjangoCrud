@@ -55,6 +55,9 @@
 
 <a href="http://127.0.0.1:8000">127.0.0.1:8000</a><br>
 
+<a href="https://github.com/mingburnu/DjangoCrud/blob/master/DjangoCrud/script.py">edit /DjangoCrud/script.py</a>
+> python manage.py shell < script.py
+
 ### REFERECE
 <a href="https://github.com/rayed/django_crud">Django CRUD Example Apps</a><br>
 <a href="http://www.effectivedjango.com/forms.html">Effective Django Forms</a><br>
