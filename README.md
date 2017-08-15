@@ -6,7 +6,7 @@
 
 > python manage.py startapp trips
 
-<a href="https://github.com/mingburnu/DjangoCrud/blob/master/DjangoCrud/settings.py">edit /DjangoCrud/settings.py</a>
+[edit /DjangoCrud/settings.py](https://github.com/mingburnu/DjangoCrud/blob/master/DjangoCrud/settings.py)
 
     TEMPLATES = [
         {
@@ -23,7 +23,7 @@
 
 
 
-<a href="https://github.com/mingburnu/DjangoCrud/blob/master/trips/models.py">edit /DjangoCrud/trips/models.py</a>
+[edit /DjangoCrud/trips/models.py](https://github.com/mingburnu/DjangoCrud/blob/master/trips/models.py)
 
     from django.db import models
 
@@ -35,7 +35,7 @@
             return self.location
 
 
-<a href="https://github.com/mingburnu/DjangoCrud/blob/master/trips/admin.py">edit /DjangoCrud/trips/admin.py</a>
+[edit /DjangoCrud/trips/admin.py](https://github.com/mingburnu/DjangoCrud/blob/master/trips/admin.py)
    
     admin.site.register(City)
 
@@ -45,23 +45,23 @@
 
 > python manage.py createsuperuser
 
-<a href="https://github.com/mingburnu/DjangoCrud/blob/master/trips/views.py">edit DjangoCrud/trips/views.py</a>
+[edit DjangoCrud/trips/views.py](https://github.com/mingburnu/DjangoCrud/blob/master/trips/views.py)
 
-<a href="https://github.com/mingburnu/DjangoCrud/blob/master/trips/urls.py">edit DjangoCrud/trips/urls.py</a>
+[edit DjangoCrud/trips/urls.py](https://github.com/mingburnu/DjangoCrud/blob/master/trips/urls.py)
 
-<a href="https://github.com/mingburnu/DjangoCrud/blob/master/DjangoCrud/urls.py">edit DjangoCrud/urls.py</a>
+[edit DjangoCrud/urls.py](https://github.com/mingburnu/DjangoCrud/blob/master/DjangoCrud/urls.py)
 
-<a href="https://github.com/mingburnu/DjangoCrud/tree/master/templates">edit DjangoCrud/templates/trips/xxxx.html</a>
+[edit DjangoCrud/templates/trips/xxxx.html](https://github.com/mingburnu/DjangoCrud/tree/master/templates)
 
-<a href="http://127.0.0.1:8000">127.0.0.1:8000</a><br>
+[127.0.0.1:8000](http://127.0.0.1:8000)
 
-<a href="https://github.com/mingburnu/DjangoCrud/blob/master/DjangoCrud/script.py">edit /DjangoCrud/script.py</a>
+[edit /DjangoCrud/script.py](https://github.com/mingburnu/DjangoCrud/blob/master/script.py)
 > python manage.py shell < script.py
 
 ### REFERECE
-<a href="https://github.com/rayed/django_crud">Django CRUD Example Apps</a><br>
-<a href="http://www.effectivedjango.com/forms.html">Effective Django Forms</a><br>
-<a href="http://www.atjiang.com/2scoopsdjango1.8-10-best-practices-for-CBV/">Django 的 CBV 最佳实践</a><br>
-<a href="https://docs.djangoproject.com/en/dev/ref/forms/fields/">Form fields</a><br>
-<a href="https://docs.djangoproject.com/en/1.11/topics/class-based-views/intro/">Introduction to class-based views</a><br>
-<a href="http://www.cnblogs.com/jishuweiwang/p/6362859.html">Python菜鸟之路</a><br>
+[Django CRUD Example Apps](https://github.com/rayed/django_crud)
+[Effective Django Forms](http://www.effectivedjango.com/forms.html)
+[Django 的 CBV 最佳实践](http://www.atjiang.com/2scoopsdjango1.8-10-best-practices-for-CBV/)
+[Form fields](https://docs.djangoproject.com/en/dev/ref/forms/fields/)
+[Introduction to class-based views](https://docs.djangoproject.com/en/1.11/topics/class-based-views/intro/)
+[Python菜鸟之路](http://www.cnblogs.com/jishuweiwang/p/6362859.html)
