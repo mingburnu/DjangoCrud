@@ -59,9 +59,9 @@
 > python manage.py shell < script.py
 
 ### REFERECE
-[Django CRUD Example Apps](https://github.com/rayed/django_crud)
-[Effective Django Forms](http://www.effectivedjango.com/forms.html)
-[Django 的 CBV 最佳实践](http://www.atjiang.com/2scoopsdjango1.8-10-best-practices-for-CBV/)
-[Form fields](https://docs.djangoproject.com/en/dev/ref/forms/fields/)
-[Introduction to class-based views](https://docs.djangoproject.com/en/1.11/topics/class-based-views/intro/)
+[Django CRUD Example Apps](https://github.com/rayed/django_crud)<br>
+[Effective Django Forms](http://www.effectivedjango.com/forms.html)<br>
+[Django 的 CBV 最佳实践](http://www.atjiang.com/2scoopsdjango1.8-10-best-practices-for-CBV/)<br>
+[Form fields](https://docs.djangoproject.com/en/dev/ref/forms/fields/)<br>
+[Introduction to class-based views](https://docs.djangoproject.com/en/1.11/topics/class-based-views/intro/)<br>
 [Python菜鸟之路](http://www.cnblogs.com/jishuweiwang/p/6362859.html)
